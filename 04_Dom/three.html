@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | learning </title>
+
+    <style>
+        body{
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+</body>
+
+<script>
+    let div = document.createElement('div');
+    console.log(div);
+    div.className = 'main';
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", 'This is a title');
+    // div.innerHTML = '<h1>Heading</h1>';
+    div.appendChild(document.createTextNode('Hello World'));
+    document.body.appendChild(div);
+    
+</script>
+
+</html>
